@@ -1,4 +1,4 @@
-#Echo сервер и клиент на Python
+# Echo сервер и клиент на Python
 =
 *Cервер принимает соединение от клиента, получает строку и отправляет её обратно (echo). Клиент подключается к серверу, отправляет сообщение и выводит ответ.*
 
@@ -43,8 +43,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
     s.sendall(b"Hello")
     data = s.recv(1024) 
-```
 print(f"Received {data!r}")
+```
 
 #Настройка адреса и порта
 *Если хотите, чтобы сервер был доступен с другой машины в сети, установите в echo-server.py:
