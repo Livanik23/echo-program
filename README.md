@@ -31,7 +31,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 print(data)
                 conn.sendall(data)
 ```
-
+Код
 echo-client.py
 ```python
 import socket
